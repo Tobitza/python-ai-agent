@@ -1,7 +1,7 @@
 [project]
 name = "python-ai-agent"
 version = "0.1.0"
-description = "Add your description here"
+description = "Local AI agent based on a Bootdev project"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
