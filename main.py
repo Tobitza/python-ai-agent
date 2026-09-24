@@ -24,6 +24,10 @@ response = client.chat.completions.create(
 )
 
 def main():
+    if response.usage == None:
+        raise RuntimeError("API request failed. No I/O tokens shown")
+    print(f"Prompt tokens: {response.usage.prompt_tokens}")
+    print(f"Response tokens: {response.usage.completion_tokens}")
     print(response.choices[0].message.content)
 
 
